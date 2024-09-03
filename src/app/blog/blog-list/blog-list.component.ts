@@ -4,13 +4,14 @@ import { FooterComponent } from '../../common/footer/footer.component';
 import { SeparatorComponent } from '../../common/separator/separator.component';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { RouterLink } from '@angular/router';
 
 gsap.registerPlugin(ScrollTrigger)
 
 @Component({
   selector: 'app-blog-list',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SeparatorComponent],
+  imports: [HeaderComponent, FooterComponent, SeparatorComponent, RouterLink],
   templateUrl: './blog-list.component.html',
   styleUrl: './blog-list.component.css'
 })

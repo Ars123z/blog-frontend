@@ -1,1 +1,4 @@
-<router-outlet />
+<div #main>
+    <router-outlet (activate)="resetPosition();"></router-outlet>
+</div>
+

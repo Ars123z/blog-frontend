@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'blog';
+  @ViewChild('mainDiv') mainDiv!: ElementRef;
+  resetPosition() {
+    this.mainDiv.nativeElement.scrollTop = 0;
+  }
 }
