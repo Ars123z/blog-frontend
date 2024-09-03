@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --primary-color: #FEA900;
+    --secondary-color: #C84B31;
+    --accent-color: #ECDBBA;
+    --background-color: #191919;
+    --text-color: #FFFFFF;
+    --bs-primary: #FEA900;
+    --bs-btn-bg:var(--bs-primary)
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    padding-top: 56px; /* Adjust based on the height of your navbar */
+  }
+
+.body-text {
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: italic;
+}
+
+body {
+    background-color: #191919;
+    color: #FFFFFF
+}
+
+.page-heading {
+font-family: "Italianno", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 96px;
+color: var(--primary-color);
+text-align: center
+}
+
+.topic-heading {
+font-family: "Italianno", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 48px;
+color: var(--primary-color);
+text-decoration: underline
+}
+
+
+
+#page-heading {
+    text-align: center;
+    color: var(--primary-color)
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
