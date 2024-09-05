@@ -30,14 +30,12 @@ font-weight: 400;
 font-style: italic;
 }
 
-*/ .body-text {
+*/ body {
+  background-color: #191919;
+  color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: italic;
-}
-body {
-    background-color: #191919;
-    color: #FFFFFF
 }
 
 .page-heading {
