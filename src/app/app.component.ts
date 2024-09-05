@@ -1,17 +1,15 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './common/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'blog';
-  @ViewChild('mainDiv') mainDiv!: ElementRef;
-  resetPosition() {
-    this.mainDiv.nativeElement.scrollTop = 0;
-  }
+
 }
